@@ -9,7 +9,7 @@ Create a mobile app using Firebase and Scrimba. This project will enhance your C
 
 ## Steps to Complete
 
-- **Access the Course**: Start by going to [Scrimba's mobile app course with Firebase](https://scrimba.com/learn/learnjavascript/lets-build-a-mobile-app-with-firebase-coafc415fb8e007eadfa60822).
+- **Access the Course**: Start by going to [Scrimba's mobile app course with Firebase](httpscrimba.com/learn/learnjavascript/lets-build-a-mobile-app-with-firebase-coafc415fb8e007eadfa60822).
 - **Course Length**: The course includes 36 modules, taking about 2 hours and 30 minutes. Please complete up to and including lesson 30. Allocate 3-4 hours to fully engage with the material.
 - **Build the App**: Follow the course to build a mobile app. 
 - **Deployment:** You ARE NOT REQUIRED TO DEPLOY your app for this project submission. You will only be submitting the files. 
