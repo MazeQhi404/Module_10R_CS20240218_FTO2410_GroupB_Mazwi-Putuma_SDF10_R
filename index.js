@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 
- import { getDatabase, ref, push, onValue} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+ import { getDatabase, ref, push, onValue, remove} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
     databaseURL: "https://realtime-database-af576-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -24,7 +24,10 @@ addButtonEl.addEventListener("click", function() {
 })
 
 onValue(shoppingListInDB, function(snapshot) {
-    let itemsArray = Object.entries(snapshot.val())
+
+    if (snapshot.exists()) {
+
+        let itemsArray = Object.entries(snapshot.val())
 
     clearShoppingListEl()
 
@@ -38,6 +41,12 @@ onValue(shoppingListInDB, function(snapshot) {
        appendItemToShoppingListEl(currentItem)
 
     }
+
+  } else { 
+    shoppingListEl.innerHTML = "Shopping cart is empty..."
+
+  }
+
 
 })
 
@@ -57,6 +66,15 @@ function appendItemToShoppingListEl(item)  {
    let newEl = document.createElement("li")
 
    newEl.textContent = itemValue
+
+   newEl.addEventListener("click", function() {
+
+    let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
+
+    remove(exactLocationOfItemInDB)
+
+
+   })
    shoppingListEl.append(newEl)
 
 }

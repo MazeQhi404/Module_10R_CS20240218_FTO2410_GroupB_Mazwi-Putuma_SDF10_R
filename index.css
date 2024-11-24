@@ -3,10 +3,11 @@ html, body {
     padding: 0;
     background-color: #EEF0F4;
     font-family: 'Rubik', sans-serif;
+    color: #432000;
     
 }
 
-.first-block {
+.block {
    display: flex;
    flex-direction: column;
    max-width: 320px;
