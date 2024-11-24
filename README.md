@@ -53,7 +53,7 @@ Forking allows you to have a personal copy of the project on their GitHub accoun
 
 The course spans roughly two and a half hours. Completion of all 54 lessons is mandatory.
 
-1. **Access the Scrimba Course:** Open the [Let's Build a Mobile App with Firebase (scrimba.com)](https://scrimba.com/learn/learnjavascript/lets-build-a-mobile-app-with-firebase-coafc415fb8e007eadfa60822) in your web browser.
+1. **Access the Scrimba Course:** Open the [Let's Build a Mobile App with Firebase (scrimba.com)]()https://scrimba.com/learn/learnjavascript/lets-build-a-mobile-app-with-firebase-coafc415fb8e007eadfa60822 in your web browser.
 2. **Follow Along:** As you progress through the Scrimba lessons, switch back to VSCode to apply what you've learned to your local project files.
 3. **Save Your Work:** Regularly save your files in VSCode by pressing **Ctrl+S** (Windows/Linux) or **Cmd+S** (Mac).
 
